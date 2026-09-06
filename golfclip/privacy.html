@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | GolfClip</title>
+<meta name="description" content="GolfClipアプリのプライバシーポリシーです。">
+<style>
+  :root {
+    --bg: #f5f7f4;
+    --card-bg: #ffffff;
+    --text: #14201a;
+    --text-sub: #56605a;
+    --accent: #2e7d4f;
+    --accent-dark: #153f2b;
+    --border: #e0e6e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12160f;
+      --card-bg: #1a2019;
+      --text: #eef1ee;
+      --text-sub: #a7b0aa;
+      --accent: #57c98a;
+      --accent-dark: #7fdba8;
+      --border: #2a332b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-sub);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--accent); }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 13.5px;
+    margin: 0 0 32px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 30px;
+  }
+  h2 {
+    font-size: 16.5px;
+    margin: 30px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  a { color: var(--accent); }
+  .intro {
+    font-size: 15px;
+    color: var(--text-sub);
+    margin: 0 0 4px;
+  }
+  footer {
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; サポートページに戻る</a>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">制定日：2026年9月6日</p>
+
+    <div class="card">
+      <p class="intro">「GolfClip」（以下「本アプリ」）は、個人開発者（以下「開発者」）が提供するiPhone向けゴルフスイング自動クリップアプリです。本ポリシーは、本アプリが取得・利用する情報について説明するものです。</p>
+
+      <h2>1. 動画・写真ライブラリ（PhotosUI / AVFoundation）</h2>
+      <p>本アプリは、ユーザーが写真ライブラリから選択した練習動画を読み込み、端末上でスイング区間の自動検出・クリップ切り出しを行います。読み込んだ動画および切り出したクリップが開発者側のサーバーに送信されることはありません。切り出したクリップをユーザーが保存操作を行った場合、その動画は端末の写真ライブラリ（カメラロール）に保存されます。</p>
+
+      <h2>2. ポーズ推定（MediaPipe / 姿勢ランドマーク検出）</h2>
+      <p>スイング区間の自動検出のため、動画フレームから人物の姿勢ランドマーク（関節位置等）を機械学習モデル（MediaPipe）で解析します。この解析はすべて端末上で完結し、映像データやランドマーク情報が外部サーバーに送信されることはありません。</p>
+
+      <h2>3. Google Driveへのバックアップ（PRO機能）</h2>
+      <p>本アプリのPRO機能をご購入いただいたユーザーは、切り出したスイングクリップをご自身のGoogleアカウントのGoogle Driveに保存できます。この機能では、Google Drive API の <code>drive.file</code> スコープ（本アプリが作成したファイルにのみアクセス可能な限定的な権限）を使用しており、ユーザーのGoogle Drive内の他のファイルにアクセスすることはありません。</p>
+      <p>本アプリによるGoogleユーザーデータの取得・利用・保存・共有は、<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>（Limited Use要件を含む）に準拠します。取得した認証情報（アクセストークン・リフレッシュトークン）は端末内のKeychainにのみ保存され、開発者側のサーバーに送信・保存されることはありません。</p>
+
+      <h2>4. 購入情報（StoreKit）</h2>
+      <p>本アプリ内の有料機能（買い切り型のアプリ内課金）の決済処理は、Apple社が提供するStoreKitを通じて行われます。開発者は購入者の氏名・住所・決済情報などの個人情報を取得・保持しません。</p>
+
+      <h2>5. 広告関連識別子・トラッキングデータ</h2>
+      <p>本アプリは広告配信のため、Google AdMobを利用しています。ユーザーがApp Tracking Transparency（ATT）の許可ダイアログで「トラッキングを許可」した場合に限り、IDFA等のトラッキングデータがGoogle AdMobに提供されます。許可しない場合、トラッキング目的でのデータ提供は行われません。</p>
+      <p>また、EEA（欧州経済領域）・英国等、GDPR等の地域規制が適用されるユーザーに対しては、Google User Messaging Platform（UMP）による同意フォームを表示し、広告に関する同意取得を行います。</p>
+      <p>なお、ATTの許可状況にかかわらず、広告の配信・不正防止・パフォーマンス測定のため、Google Mobile Ads SDKは以下のデータを収集する場合があります。</p>
+      <ul>
+        <li>デバイス識別子（広告識別子等）</li>
+        <li>IPアドレス（おおよその地域の推定に使用されます）</li>
+        <li>広告の表示回数・タップ等の操作データ</li>
+        <li>クラッシュ情報・パフォーマンス情報等の診断データ</li>
+      </ul>
+      <p>Googleによるデータの取り扱いの詳細は、「<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>」および<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleプライバシーポリシー</a>をご参照ください。</p>
+
+      <h2>6. 分析・クラッシュ収集について</h2>
+      <p>本アプリは、Firebase等の第三者製アクセス解析SDKを導入していません。クラッシュ情報については、Apple標準の仕組み（App Store Connect経由のクラッシュレポート）のほか、第5項に記載のGoogle Mobile Ads SDKが、SDK自体の品質改善のためにクラッシュ情報・パフォーマンス情報を収集する場合があります。</p>
+
+      <h2>7. お問い合わせ窓口</h2>
+      <p>本ポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+      <p><a href="mailto:anoguchi0830+golfclip@gmail.com">anoguchi0830+golfclip@gmail.com</a></p>
+
+      <h2>8. 本ポリシーの改定</h2>
+      <p>本ポリシーの内容は、法令の改正やアプリの機能追加等に伴い、予告なく改定される場合があります。改定を行った場合は、本ページ上でその内容を更新します。</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 GolfClip</p>
+    </footer>
+  </div>
+</body>
+</html>
