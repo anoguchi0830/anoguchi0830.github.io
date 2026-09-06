@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GolfClip サポート</title>
-<meta name="description" content="GolfClip（ゴルフスイング自動クリップアプリ）のサポートページです。お問い合わせはこちらから。">
+<title>GolfClip Support</title>
+<meta name="description" content="Support page for GolfClip, an app that automatically clips golf swings from video.">
 <style>
   :root {
     --bg: #f5f7f4;
@@ -29,7 +29,7 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.75;
@@ -39,6 +39,11 @@
     max-width: 640px;
     margin: 0 auto;
     padding: 64px 0 48px;
+  }
+  .lang-switch {
+    float: right;
+    font-size: 14px;
+    margin-top: 8px;
   }
   .logo-badge {
     display: inline-flex;
@@ -119,49 +124,44 @@
     text-decoration: underline;
   }
   a { color: var(--accent); }
-  .lang-switch {
-    float: right;
-    font-size: 14px;
-    margin-top: 8px;
-  }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <a class="lang-switch" href="index-en.html">English</a>
+    <a class="lang-switch" href="index.html">日本語</a>
     <div class="logo-badge">G</div>
-    <h1>GolfClip サポート</h1>
-    <p class="tagline">練習場で撮った動画を、スイングごとに自動でクリップに切り出すiPhoneアプリです。</p>
+    <h1>GolfClip Support</h1>
+    <p class="tagline">Import a video from the driving range and it's automatically split into one clip per swing.</p>
 
     <div class="card">
-      <h2>アプリについて</h2>
-      <p>GolfClipは、練習場で連続撮影した動画をインポートするだけで、AIがスイングの瞬間を自動検出し、1本ずつのクリップに切り出すアプリです。素振りも自動で判別してラベル付けします。</p>
+      <h2>About the app</h2>
+      <p>GolfClip takes a video you recorded continuously at the range, uses on-device AI to detect the moment of each swing, and clips it out into its own file — automatically flagging likely practice swings along the way.</p>
     </div>
 
     <div class="card">
-      <h2>お問い合わせ</h2>
-      <p>不具合のご報告、ご要望、その他お問い合わせは以下のメールアドレスまでご連絡ください。</p>
-      <a class="btn" href="mailto:anoguchi0830+golfclip@gmail.com">メールで問い合わせる</a>
+      <h2>Contact</h2>
+      <p>For bug reports, feature requests, or any other inquiries, please reach out by email.</p>
+      <a class="btn" href="mailto:anoguchi0830+golfclip@gmail.com">Email us</a>
     </div>
 
     <div class="card">
-      <h2>よくあるご質問</h2>
+      <h2>FAQ</h2>
       <div class="faq-item">
-        <h3>対応言語は？</h3>
-        <p>日本語・英語に対応しています。</p>
+        <h3>What languages are supported?</h3>
+        <p>Japanese and English.</p>
       </div>
       <div class="faq-item">
-        <h3>動画データは外部に送信されますか？</h3>
-        <p>いいえ。動画の解析・クリップ切り出しはすべて端末上で処理され、外部サーバーへの送信は行いません。PRO機能でGoogle Driveへの保存を選んだ場合のみ、ご自身のGoogleアカウントに直接アップロードされます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+        <h3>Is my video data sent anywhere?</h3>
+        <p>No. All video analysis and clipping happens on your device — nothing is sent to a server. If you enable the PRO Google Drive backup, clips are uploaded directly to your own Google account. See our <a href="privacy-en.html">Privacy Policy</a> for details.</p>
       </div>
       <div class="faq-item">
-        <h3>Google Driveへの保存で、Drive内の他のファイルにアクセスされますか？</h3>
-        <p>いいえ。本アプリが作成したファイルにのみアクセスできる限定的な権限（drive.fileスコープ）を使用しており、既存のファイルやフォルダにアクセスすることはありません。</p>
+        <h3>Does Google Drive backup access my other files?</h3>
+        <p>No. The app uses a restricted permission (the drive.file scope) that only lets it access files it creates itself — it cannot see your existing files or folders.</p>
       </div>
     </div>
 
     <footer>
-      <p><a href="privacy.html">プライバシーポリシー</a></p>
+      <p><a href="privacy-en.html">Privacy Policy</a></p>
       <p>&copy; 2026 GolfClip</p>
     </footer>
   </div>
