@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apps</title>
+<title>NotechLabs</title>
+<meta name="description" content="NotechLabs — iPhoneアプリ（PuttSense、GolfClip）とAdobe Express アドオン（j-ruby、Calen4、Addon Explorer）を開発しています。">
 <style>
   :root {
     --bg: #f6f7f5;
     --card-bg: #ffffff;
     --text: #1c1f1b;
     --text-sub: #56605a;
+    --accent: #1e7a4c;
+    --accent-dark: #16603b;
+    --addon-accent: #3059c8;
     --border: #e2e6e0;
   }
   @media (prefers-color-scheme: dark) {
@@ -18,6 +22,9 @@
       --card-bg: #1e2228;
       --text: #eef1ee;
       --text-sub: #a7b0aa;
+      --accent: #4fbf87;
+      --accent-dark: #6fd39f;
+      --addon-accent: #7d9dff;
       --border: #2c3138;
     }
   }
@@ -35,32 +42,166 @@
     margin: 0 auto;
     padding: 64px 0 48px;
   }
-  h1 { font-size: 24px; margin: 0 0 32px; }
+  .logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .tagline {
+    color: var(--text-sub);
+    font-size: 15px;
+    margin: 0 0 48px;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-sub);
+    margin: 0 0 14px;
+  }
+  section { margin-bottom: 44px; }
+  section:last-of-type { margin-bottom: 0; }
   .card {
     display: block;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 20px 24px;
-    margin-bottom: 16px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
     text-decoration: none;
     color: var(--text);
+    transition: border-color 0.15s ease;
   }
-  .card h2 { font-size: 16px; margin: 0 0 4px; }
-  .card p { margin: 0; font-size: 14px; color: var(--text-sub); }
+  a.card:hover { border-color: var(--text-sub); }
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .mini-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .badge-put { background: #1e7a4c; }
+  .badge-golf { background: #2e7d4f; }
+  .badge-addon { background: var(--addon-accent); }
+  .card h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .card p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--text-sub);
+  }
+  .contact-card p {
+    color: var(--text);
+    font-size: 15px;
+    margin: 0 0 16px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14.5px;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  footer {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Apps</h1>
-    <a class="card" href="/puttsense/">
-      <h2>PuttSense</h2>
-      <p>パター練習支援アプリ — サポート・プライバシーポリシー</p>
-    </a>
-    <a class="card" href="/golfclip/">
-      <h2>GolfClip</h2>
-      <p>ゴルフスイング自動クリップアプリ — サポート・プライバシーポリシー</p>
-    </a>
+    <div class="logo-badge">N</div>
+    <h1>NotechLabs</h1>
+    <p class="tagline">iPhoneアプリと Adobe Express アドオンをつくっています。</p>
+
+    <section>
+      <h2 class="section-title">iPhone App</h2>
+      <a class="card" href="/puttsense/">
+        <div class="card-head">
+          <span class="mini-badge badge-put">P</span>
+          <h2>PuttSense</h2>
+        </div>
+        <p>自宅でのパター練習をサポートする、手首の動きを計測するアプリ。</p>
+      </a>
+      <a class="card" href="/golfclip/">
+        <div class="card-head">
+          <span class="mini-badge badge-golf">G</span>
+          <h2>GolfClip</h2>
+        </div>
+        <p>練習場で撮った動画から、スイングを自動でクリップに切り出すアプリ。</p>
+      </a>
+    </section>
+
+    <section>
+      <h2 class="section-title">Adobe Express Add-on</h2>
+      <a class="card" href="/addons/j-ruby/">
+        <div class="card-head">
+          <span class="mini-badge badge-addon">J</span>
+          <h2>j-ruby</h2>
+        </div>
+        <p>選択した日本語テキストに、ふりがな（ルビ）を自動で追加します。</p>
+      </a>
+      <a class="card" href="/addons/calen4/">
+        <div class="card-head">
+          <span class="mini-badge badge-addon">C</span>
+          <h2>Calen4</h2>
+        </div>
+        <p>日本の祝日に対応したカレンダーを、ドキュメントにワンクリックで挿入します。</p>
+      </a>
+      <a class="card" href="/addons/express-helper-jp/">
+        <div class="card-head">
+          <span class="mini-badge badge-addon">A</span>
+          <h2>Addon Explorer</h2>
+        </div>
+        <p>日本語・韓国語・英語で Adobe Express のアドオンを検索・発見できるポータル。</p>
+      </a>
+    </section>
+
+    <section>
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-card">
+        <p>アプリ・アドオンに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+        <a class="btn" href="mailto:anoguchi.smb@gmail.com">メールで問い合わせる</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 NotechLabs</p>
+    </footer>
   </div>
 </body>
 </html>

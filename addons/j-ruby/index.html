@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>j-ruby サポート | NotechLabs</title>
+<meta name="description" content="Adobe Express アドオン「j-ruby」のサポートページです。使い方・プライバシーポリシー・お問い合わせはこちらから。">
+<style>
+  :root {
+    --bg: #f6f7f5;
+    --card-bg: #ffffff;
+    --text: #1c1f1b;
+    --text-sub: #56605a;
+    --accent: #3059c8;
+    --accent-dark: #1f3f96;
+    --border: #e2e6e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --card-bg: #1e2228;
+      --text: #eef1ee;
+      --text-sub: #a7b0aa;
+      --accent: #7d9dff;
+      --accent-dark: #a5bcff;
+      --border: #2c3138;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-sub);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--accent); }
+  .logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .tagline {
+    color: var(--text-sub);
+    font-size: 15px;
+    margin: 0 0 36px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 16px;
+    margin: 0 0 12px;
+    color: var(--text-sub);
+    font-weight: 600;
+  }
+  .card p {
+    margin: 0 0 10px;
+    font-size: 15.5px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14.5px;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .faq-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .faq-item h3 {
+    font-size: 14.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .faq-item p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-sub);
+  }
+  .policy h3 {
+    font-size: 15px;
+    margin: 20px 0 6px;
+  }
+  .policy h3:first-child { margin-top: 0; }
+  .meta {
+    color: var(--text-sub);
+    font-size: 13px;
+    margin: -4px 0 14px;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
+  footer a {
+    color: var(--text-sub);
+    text-decoration: underline;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="/">&larr; NotechLabs</a>
+    <div class="logo-badge">J</div>
+    <h1>j-ruby サポート</h1>
+    <p class="tagline">選択した日本語テキストに、ふりがな（ルビ）を自動で追加する Adobe Express アドオンです。</p>
+
+    <div class="card">
+      <h2>アドオンについて</h2>
+      <p>j-ruby（Japanese Ruby Add-on）は、選択したテキストを形態素解析エンジン「Kuromoji.js」で解析し、漢字の上に自動でルビ（ふりがな）を配置するアドオンです。Adobe Express のドキュメント上で、読みにくい漢字にすばやくふりがなを振りたいときにご利用いただけます。</p>
+    </div>
+
+    <div class="card">
+      <h2>使い方</h2>
+      <div class="faq-item">
+        <h3>基本の使い方</h3>
+        <p>Adobe Express のテキストオブジェクトを選択した状態でアドオンパネルを開き、実行ボタンを押すと、選択中のテキストに自動でルビが配置されます。</p>
+      </div>
+      <div class="faq-item">
+        <h3>複数行のテキストについて</h3>
+        <p>複数行のテキストには、明示的な改行（Enter/Return）が必要です。テキストボックスの幅による自動折り返しには対応していません。</p>
+      </div>
+      <div class="faq-item">
+        <h3>ルビの精度について</h3>
+        <p>本アドオンは Kuromoji（Apache License 2.0）による形態素解析を利用しています。文脈によっては、ルビの読みが意図したものと異なる場合があります。</p>
+      </div>
+    </div>
+
+    <div class="card policy">
+      <h2>プライバシーポリシー</h2>
+      <p class="meta">最終更新: 2026年9月</p>
+      <p>j-ruby は、ユーザーのテキスト内容や個人情報を一切収集・送信しません。ふりがなを生成するための形態素解析は、すべてブラウザ（アドオンの実行環境）内で完結して処理されます。</p>
+      <h3>外部通信について</h3>
+      <p>初回起動時、形態素解析に必要な辞書データを CDN（jsdelivr）から取得します。この通信はアドオン自体を動作させるための静的ファイル取得のみであり、ユーザーが入力・選択したテキストの内容が外部サーバーへ送信されることはありません。</p>
+      <h3>データの保存</h3>
+      <p>本アドオンは、ユーザーの利用状況や設定内容をサーバー側に保存しません。</p>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>不具合のご報告、ご要望、その他お問い合わせは以下のメールアドレスまでご連絡ください。</p>
+      <a class="btn" href="mailto:anoguchi.smb@gmail.com">メールで問い合わせる</a>
+    </div>
+
+    <footer>
+      <p><a href="/">NotechLabs</a></p>
+      <p>&copy; 2026 NotechLabs</p>
+    </footer>
+  </div>
+</body>
+</html>
