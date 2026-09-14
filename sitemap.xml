@@ -16,6 +16,16 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://notechlabs.com/puttsense/index-en.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notechlabs.com/puttsense/privacy-en.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://notechlabs.com/golfclip/</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>

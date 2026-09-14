@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | PuttSense</title>
+<meta name="description" content="Privacy Policy for the PuttSense app.">
+<style>
+  :root {
+    --bg: #f6f7f5;
+    --card-bg: #ffffff;
+    --text: #1c1f1b;
+    --text-sub: #56605a;
+    --accent: #1e7a4c;
+    --accent-dark: #16603b;
+    --border: #e2e6e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --card-bg: #1e2228;
+      --text: #eef1ee;
+      --text-sub: #a7b0aa;
+      --accent: #4fbf87;
+      --accent-dark: #6fd39f;
+      --border: #2c3138;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 0 48px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text-sub);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--accent); }
+  .lang-switch {
+    float: right;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 13.5px;
+    margin: 0 0 32px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 30px;
+  }
+  h2 {
+    font-size: 16.5px;
+    margin: 30px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+  p {
+    font-size: 15px;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  a { color: var(--accent); }
+  .intro {
+    font-size: 15px;
+    color: var(--text-sub);
+    margin: 0 0 4px;
+  }
+  footer {
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--text-sub);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="lang-switch" href="privacy.html">日本語</a>
+    <a class="back-link" href="index-en.html">&larr; Back to support page</a>
+    <a class="back-link" href="/" style="margin-left:16px;">NotechLabs</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Established: July 11, 2026 &middot; Revised: July 17, 2026</p>
+
+    <div class="card">
+      <p class="intro">"PuttSense" (the "App") is an iPhone app for at-home putting practice, provided by an individual developer (the "Developer"). This policy explains what information the App collects and how it is used.</p>
+
+      <h2>1. Motion Sensor Data (CoreMotion)</h2>
+      <p>The App uses data from your device's motion sensors (CoreMotion) to measure wrist angle during your putting stroke. This data is processed entirely on your device and is never sent to or stored on an external server.</p>
+
+      <h2>2. Camera Feed (AVFoundation)</h2>
+      <p>During calibration (initial setup), the App uses the front camera's preview feed only for on-screen display. This feed is never sent to the Developer's servers. A video is saved to your device's photo library (Camera Roll) only if you explicitly choose to export one.</p>
+
+      <h2>3. Purchase Information (StoreKit)</h2>
+      <p>Payment for the App's paid feature (a one-time, non-consumable in-app purchase) is processed through Apple's StoreKit. The Developer does not collect or retain purchasers' names, addresses, or payment details.</p>
+
+      <h2>4. Advertising Identifiers and Tracking Data</h2>
+      <p>The App uses Google AdMob to serve ads. Tracking data such as the IDFA is shared with Google AdMob only if you grant permission via the App Tracking Transparency (ATT) prompt. If you decline, no data is shared for tracking purposes.</p>
+      <p>For users in regions covered by GDPR (the EEA, UK, etc.), the App displays a consent form via the Google User Messaging Platform (UMP) to obtain consent for advertising.</p>
+      <p>Regardless of your ATT choice, the Google Mobile Ads SDK may collect the following data for ad delivery, fraud prevention, and performance measurement:</p>
+      <ul>
+        <li>Device identifiers (advertising identifier, etc.)</li>
+        <li>IP address (used to estimate approximate location)</li>
+        <li>Ad impression and interaction data</li>
+        <li>Crash and performance diagnostic data</li>
+      </ul>
+      <p>For details on how Google handles this data, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use Google services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+      <h2>5. Usage Data (Round Results and Putt Scores)</h2>
+      <p>Your practice round results and putt score history are stored only on your device (UserDefaults). This data is retained for 90 days and automatically deleted after that period. It is never sent to or synced with an external server.</p>
+
+      <h2>6. Analytics and Crash Reporting</h2>
+      <p>The App does not integrate any third-party analytics SDK such as Firebase. Crash reports are collected through Apple's standard mechanism (App Store Connect crash reports); the Google Mobile Ads SDK described in section 4 may also collect crash and performance data for its own quality improvement.</p>
+
+      <h2>7. Contact</h2>
+      <p>For questions about this policy, please contact:</p>
+      <p><a href="mailto:anoguchi0830+puttsense@gmail.com">anoguchi0830+puttsense@gmail.com</a></p>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>This policy may be revised without notice as laws change or the App's features evolve. Any changes will be reflected on this page.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 PuttSense &middot; <a href="/">NotechLabs</a></p>
+    </footer>
+  </div>
+</body>
+</html>
